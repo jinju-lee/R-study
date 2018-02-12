@@ -1,0 +1,22 @@
+install.packages("ggplot2")
+library(ggplot2)
+library(KoNLP)
+qplot(x)
+install.packages("ggplot2")
+library(ggplot2)
+x<-c('a','b','c','d')
+qplot(x)
+library(ggplot2)
+qplot(x)
+data<-mpg
+data
+qplot(data=mpg, x=hwy)
+qplot(data=mpg, x=cty)
+qplot(data=mpg, x=drv, y=hwy)
+qplot(data=mpg, x=drv, y=hwy, geom='line')
+qplot(data=mpg, x=drv, y=hwy, geom='boxplot')
+qplot(data=mpg, x=drv, y=hwy, geom='boxplot',colour=drv)
+a<-c(80,60,70,50,90)
+mean(a)
+b=mean(a)
+?qplot
