@@ -1,0 +1,127 @@
+#1
+date4<-seq(from=as.Date('2015-01-01'),to=as.Date('2015-01-31'),by='day')
+date4
+#2
+vec1<-c('사과','배','감','버섯','고구마')
+vec1
+vec1[-3]
+#3
+vec1<-c('봄','여름','가을','겨울')
+vec2<-c('봄','여름','늦여름','초가을')
+union(vec1,vec2)
+setdiff(vec1,vec2)
+intersect(vec1,vec2)
+#4
+v1<-c(1:10)
+v1
+v1[1:5]
+v1[3:7]
+v1[-(1:5)]
+v1[-(3:7)]
+v1[3]<-0
+v1[6]<-0
+v1
+v1[9]<-"0"
+class(v1)
+v1<-as.integer(v1)
+class(v1)
+#5
+v1<-append(v1,0,after = 0)
+v1
+v1[11]<-11
+v1
+v1<-append(v1,14:20,after = 11)
+v1
+v1<-append(v1,12:13,after = 11)
+v1
+v2<-100
+v1+v2
+v2<-c(100,200,300)
+v1+v2
+#6
+union(v1,v2)
+setdiff(v1,v2)
+intersect(v1,v2)
+v2<-c('A','B','C')
+v3<-seq(5,50,by=5)
+v2
+v3
+v4<-c(5,6,5,6,5,6)
+v5<-c(-1,-1,-1,0,0,0,1,1,1)
+length(v5)
+15 %in% v3
+vv<-55 %in% v3
+vv
+#7
+seasons<-matrix(c('봄','여름','가을','겨울'),nrow=2)
+seasons
+seasons<-matrix(c('봄','여름','가을','겨울'),nrow=2,byrow = T)
+seasons
+#8
+seasons[,2]
+#9
+seasons_2<-rbind(seasons,c('초봄','초가을'))
+seasons_2
+#10
+seasons_3<-cbind(seasons_2,c('초여름','초겨울','한겨울'))
+seasons_3
+#11
+m<-matrix(c(1:8),nrow=4)
+m
+#12
+m[,1]
+#13
+m[2,]
+#14
+colnames(m)<-c('A','B')
+m
+#15
+mm<-cbind(m,c(9:12))
+mm
+#16
+n<-matrix(c(1:8),nrow=2,byrow = T)
+n
+#17
+n[1,]
+#18
+n[,4]
+#19
+nn<-rbind(n,c(9:12))
+nn
+#20
+colnames(n)<-c('A','B','C','D')
+n
+#21
+o<-matrix(c('J','A','V','A','C','A','F','E'),nrow = 2,byrow = T)
+o
+#22
+arr2<-array(c('O','R','A','C','L','E','S','E','R','V','E','R'),dim = c(2,6))
+arr2
+#23
+arr2[1,3]
+#24
+arr3<-array(seq(15,90,by=5),dim=c(2,4,2))
+arr3
+#25
+arr3[ , ,2]
+#26
+s<-list(ko=90,
+        ma=100,
+        en=90)
+s
+#27
+s$sc<-100
+s
+#28
+s$en
+#29
+s[2:3]
+#30
+s$en<-95
+s
+#31
+sum<-s$ko+s$ma+s$en+s$sc
+sum
+#32
+s$sc<-NULL
+s
